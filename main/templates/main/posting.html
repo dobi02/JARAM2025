@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Posting!</title>
+    </head>
+    <body>
+        <h1>{{post.postname}}</h1>
+        <p>작성자: {{post.author}}</p>
+        <p>{{post.contents}}</p>
+        {% if post.mainphoto %}
+            <img src = "{{ post.mainphoto.url }}" alt="" height="600">
+            <br>
+        {% endif %}
+        <a href="/blog/">목록</a>
+    </body>
+</html>
